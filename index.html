@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Wiki</title>
+
+<link rel="stylesheet" href="style.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Wiki</h1>
+
+<input type="text" id="search" placeholder="Buscar artigo...">
+
+</header>
+
+<div class="container">
+
+<nav id="menu"></nav>
+
+<main id="content">
+
+<h2>Bem-vindo</h2>
+
+<p>Selecione um artigo no menu.</p>
+
+</main>
+
+</div>
+
+<script src="wiki.min.js"></script>
+
+<script>
+
+document.addEventListener("contextmenu", e => e.preventDefault());
+
+document.onkeydown=function(e){
+
+if(e.keyCode==123)return false;
+if(e.ctrlKey&&e.shiftKey&&e.keyCode=='I'.charCodeAt(0))return false;
+if(e.ctrlKey&&e.keyCode=='U'.charCodeAt(0))return false;
+
+}
+
+</script>
+
+</body>
+</html>
